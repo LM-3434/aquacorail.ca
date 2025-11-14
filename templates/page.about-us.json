@@ -1,0 +1,369 @@
+{
+  "sections": {
+    "166005794226b48f03": {
+      "type": "section-slideshow",
+      "blocks": {
+        "166005794296ae0ec5-0": {
+          "type": "slide",
+          "settings": {
+            "layout": "right",
+            "overlay_opacity": 0,
+            "color_palette": "scheme-1",
+            "text_position": "align-start text-start",
+            "title": "<h1>Wholesale <span style=\"text-decoration:underline\">Pet Supplies</span>  for our happy retailers.</h1><h5>With over 5,000 products for dogs and cats from more than 40 trusted brands</h5>",
+            "title_underline_style": "accent",
+            "text": "<p>We serve pet retailers, groomers, and e-commerce shops across Europe. <br/>Whether you're a brick-and-mortar store or a growing online business.</p>",
+            "show_first_link": true,
+            "first_link_text": "Cats",
+            "first_link_url": "/",
+            "first_button_style": "secondary plain",
+            "show_second_link": true,
+            "second_link_text": "Dogs",
+            "second_link_url": "/",
+            "second_button_style": "secondary inv"
+          }
+        }
+      },
+      "block_order": [
+        "166005794296ae0ec5-0"
+      ],
+      "settings": {
+        "height": "adapt",
+        "width": "wide",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "16/9",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "disabled": true,
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "16600579701b9ea466": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "166005796961cc60d8-0": {
+          "type": "title",
+          "settings": {
+            "title": "<h2>Why Work With Us?</h2>",
+            "title_underline_style": "none"
+          }
+        },
+        "166005796961cc60d8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our dedicated account managers in the Netherlands, Belgium, and Germany support our retail partners with hands-on advice, trend insights, and tailored product suggestions. You can browse and order through our easy-to-use B2B webshop — complete with rich content, seasonal trends, and curated collections, or order via EDI, app, or phone.</p><p>We make it easy for you to focus on what matters: running your business.</p>"
+          }
+        },
+        "166005796961cc60d8-3": {
+          "type": "buttons",
+          "settings": {
+            "show_first_link": true,
+            "first_link_text": "Our brands",
+            "first_link_url": "/",
+            "first_button_style": "secondary plain",
+            "show_second_link": false,
+            "second_link_text": "",
+            "second_link_url": "",
+            "second_button_style": "secondary plain"
+          }
+        }
+      },
+      "block_order": [
+        "166005796961cc60d8-0",
+        "166005796961cc60d8-1",
+        "166005796961cc60d8-3"
+      ],
+      "settings": {
+        "overlay_opacity": 0,
+        "color_palette": "scheme-1",
+        "layout": "image-left",
+        "text_position": "text-start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_slideshow_HH9NhB": {
+      "type": "section-slideshow",
+      "blocks": {
+        "slide_yhk4x3": {
+          "type": "slide",
+          "settings": {
+            "layout": "background",
+            "overlay_opacity": 100,
+            "color_palette": "scheme-7",
+            "text_position": "align-start text-start",
+            "title": "<h5><span style=\"text-decoration:underline\">About our online store</span></h5><h3>\"We also offer value-added services like <strong>dropshipping</strong>, allowing you to expand your product range without carrying stock. Products ship directly to your customers or your store, typically within 24 hours...\"</h3><p><strong>Roald Jackson</strong>, Owner of Xtra wholesale</p>",
+            "title_underline_style": "accent",
+            "text": "",
+            "show_first_link": false,
+            "first_link_text": "Read more",
+            "first_link_url": "/",
+            "first_button_style": "primary inv",
+            "show_second_link": false,
+            "second_link_text": "Button",
+            "second_link_url": "",
+            "second_button_style": "secondary plain"
+          }
+        }
+      },
+      "block_order": [
+        "slide_yhk4x3"
+      ],
+      "settings": {
+        "height": "32/9",
+        "width": "boxed",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "16/9",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "16600579852f4017d4": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "1660057985549a4c95-0": {
+          "type": "title",
+          "settings": {
+            "title": "<h2>For Retailers</h2>",
+            "title_underline_style": "none"
+          }
+        },
+        "1660057985549a4c95-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We help you build a stronger assortment, optimize shelf space, and meet modern consumer expectations — whether you're running a single location or multiple outlets. Our flexible ordering options and responsive service make it easy to grow with confidence.</p>"
+          }
+        },
+        "usp_1": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Over <strong>5.000+ pet essentials</strong> in stock</p>"
+          }
+        },
+        "usp_2": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Sustainable and <strong>eco-friendly</strong></p>"
+          }
+        },
+        "usp_3": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Smart purchasing starts at<strong> Xtra®</strong></p>"
+          }
+        },
+        "1660057985549a4c95-3": {
+          "type": "buttons",
+          "settings": {
+            "show_first_link": true,
+            "first_link_text": "Contact us",
+            "first_link_url": "/",
+            "first_button_style": "secondary inv",
+            "show_second_link": false,
+            "second_link_text": "",
+            "second_link_url": "",
+            "second_button_style": "secondary plain"
+          }
+        }
+      },
+      "block_order": [
+        "1660057985549a4c95-0",
+        "1660057985549a4c95-1",
+        "usp_1",
+        "usp_2",
+        "usp_3",
+        "1660057985549a4c95-3"
+      ],
+      "settings": {
+        "overlay_opacity": 0,
+        "color_palette": "scheme-1",
+        "layout": "image-right",
+        "text_position": "text-start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_logo_list_cxxi3k": {
+      "type": "section-logo-list",
+      "blocks": {
+        "logo_8Wt6C4": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_HEFfag": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_7p8WR6": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_gdn6yD": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_CXQf9q": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_PAHDVr": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_jD3LMN": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_TQD4mP": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_G34w4T": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_8Wt6C4",
+        "logo_HEFfag",
+        "logo_7p8WR6",
+        "logo_gdn6yD",
+        "logo_CXQf9q",
+        "logo_PAHDVr",
+        "logo_jD3LMN",
+        "logo_TQD4mP",
+        "logo_G34w4T"
+      ],
+      "name": "t:sections.logo_list.presets.name",
+      "settings": {
+        "number_of_items": 6,
+        "text_alignment": "start",
+        "title": "<h3>Our partners</h3>",
+        "title_underline_style": "none",
+        "show_link": true,
+        "link_text": "View all",
+        "link_url": "/",
+        "button_style": "secondary link",
+        "spacing_desktop": 80,
+        "spacing_mobile": 30
+      }
+    },
+    "section_events_calendar_bfNGp9": {
+      "type": "section-events-calendar",
+      "blocks": {
+        "event_3BkemG": {
+          "type": "event",
+          "settings": {
+            "date_color_palette": "primary",
+            "title": "<h4>Xtra at Pet Product Expo 2025</h4>",
+            "title_underline_style": "none",
+            "text": "<p>Join us at Europe’s leading pet trade fair, where we’ll be showcasing our latest dog and cat collections, including new sustainable packaging concepts and top-selling travel accessories. Connect with our wholesale team, discover retailer exclusives, and enjoy a sneak peek into upcoming trends.</p>",
+            "date": "July 31th",
+            "time": "7PM - 11PM",
+            "location": "Messe Frankfurt – Hall 3, Booth A14Frankfurt, Germany",
+            "location_url": "",
+            "link_text": "More info",
+            "link_url": "",
+            "button_style": "primary link"
+          }
+        },
+        "event_jk3Txy": {
+          "type": "event",
+          "settings": {
+            "date_color_palette": "primary",
+            "title": "<h4>Evening Meet & Greet: Premium Cat Brands Showcase</h4>",
+            "title_underline_style": "none",
+            "text": "<p>An exclusive evening for retailers to explore our newest luxury cat lines — from plush bedding to design-forward scratchers. Enjoy refreshments, talk directly with our brand partners, and get early access to pre-order deals.</p>",
+            "date": "August 1th",
+            "time": "8PM",
+            "location": "Hondenstraat 42 1043 PL, Amsterdam, NL",
+            "location_url": "",
+            "link_text": "More info",
+            "link_url": "",
+            "button_style": "primary link"
+          }
+        }
+      },
+      "block_order": [
+        "event_3BkemG",
+        "event_jk3Txy"
+      ],
+      "name": "t:sections.events_calendar.presets.name",
+      "settings": {
+        "text_alignment": "start",
+        "title": "<h3>Events</h3>",
+        "title_underline_style": "none",
+        "show_link": true,
+        "link_text": "Button",
+        "link_url": "",
+        "button_style": "primary plain",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h2"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "166005794226b48f03",
+    "breadcrumbs",
+    "16600579701b9ea466",
+    "section_slideshow_HH9NhB",
+    "16600579852f4017d4",
+    "section_logo_list_cxxi3k",
+    "section_events_calendar_bfNGp9",
+    "main-page"
+  ]
+}

@@ -1,0 +1,706 @@
+<!doctype html>
+{%- assign rtl_languages = 'ae,ar,arc,bcc,bqi,ckb,dv,fa,glk,ha,he,kwh,ks,ku,mzn,nqo,pnb,ps,sd,ug,ur,yi' | split: ',' %}
+<html
+  lang="{{ request.locale.iso_code }}"
+  data-theme="xtra"
+  dir="{% if rtl_languages contains localization.language.iso_code %}rtl{% else %}ltr{% endif %}"
+  class="no-js {% if settings.enable_accessibility_default %}t1ac{% endif %}{% if request.design_mode %} theme-editor{% endif %}{% unless settings.enable_hyphens %} no-hyph{% endunless %}"
+>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>
+      {{ page_title }}
+      {% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+    </title>
+    {%- if page_description -%}<meta name="description" content="{{ page_description | escape }}">{%- endif -%}
+    <meta name="theme-color" content="{{ settings.accent_color }}">
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="true">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover, shrink-to-fit=no"
+    >
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-config" content="{{ 'browserconfig.xml' | asset_url }}">
+    <link rel="canonical" href="{{ canonical_url }}">
+    {% unless settings.heading_font.system? and settings.body_font.system? -%}
+      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+    {%- endunless -%}
+    <link rel="preload" as="style" href="{{ 'screen.css' | asset_url }}">
+    <link rel="preload" as="style" href="{{ 'theme-xtra.css' | asset_url }}">
+    <link rel="preload" as="style" href="{{ 'screen-settings.css' | asset_url }}">
+    {% if rtl_languages contains localization.language.iso_code -%}
+      <link rel="preload" as="style" href="{{ 'rtl.css' | asset_url }}">
+    {%- endif %}
+    {% unless settings.heading_font.system? -%}
+      <link rel="preload" as="font" href="{{ settings.heading_font | font_url }}" type="font/woff2" crossorigin>
+    {%- endunless %}
+    {% unless settings.body_font.system? -%}
+      <link rel="preload" as="font" href="{{ settings.body_font | font_url }}" type="font/woff2" crossorigin>
+    {%- endunless %}
+    {%- if settings.custom_primary_font_snippet -%}{{ settings.custom_primary_font_snippet }}{%- endif -%}
+    {%- if settings.custom_secondary_font_snippet -%}{{ settings.custom_secondary_font_snippet }}{%- endif -%}
+    <link rel="preload" as="font" href="{{ 'xtra.woff2' | asset_url }}" crossorigin>
+    {{ 'screen.css' | asset_url | stylesheet_tag: media: 'screen' }}
+    {{ 'theme-xtra.css' | asset_url | stylesheet_tag: media: 'screen' }}
+    {{ 'screen-settings.css' | asset_url | stylesheet_tag: media: 'screen' }}
+    <noscript><link rel="stylesheet" href="{{ 'async-menu.css' | asset_url }}"></noscript>
+    {%- if template.name == 'blog' or template.name == 'article' -%}
+      <link media="screen" rel="stylesheet" href="{{ 'page-blog.css' | asset_url }}" id="blog-css">
+    {%- endif -%}
+    {%- if template.name == 'cart' -%}
+      <link media="screen" rel="stylesheet" href="{{ 'page-cart.css' | asset_url }}" id="cart-css">
+    {%- endif -%}
+    {%- if template.name == 'collection' or template.name == 'search' -%}
+      {{ 'page-collection.css' | asset_url | stylesheet_tag: preload: true, media: 'screen' }}
+    {%- endif -%}
+    {%- if template.name == '404' -%}
+      <link media="screen" rel="stylesheet" href="{{ 'page-misc.css' | asset_url }}" id="misc-css">
+    {%- endif -%}
+    {%- if template.name == 'product' -%}
+      {{ 'page-product.css' | asset_url | stylesheet_tag: preload: true, media: 'screen' }}
+    {%- endif -%}
+    {%- if settings.enable_accessibility_default %}
+      <link media="screen" rel="stylesheet" href="{{ 'theme-accessible.css' | asset_url }}" id="accessible-mode-css">
+    {%- endif %}
+    {%- if settings.favicon -%}
+      <link rel="icon" href="{{ settings.favicon | image_url: width: 32, height: 32 }}" type="image/png">
+      <link rel="mask-icon" href="safari-pinned-tab.svg" color="#333333">
+      <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    {%- endif -%}
+    <script>
+      document.documentElement.classList.remove('no-js');
+      document.documentElement.classList.add('js');
+    </script>
+    {% render 'social-meta-tags' %}
+    {{ content_for_header }}
+    {{ settings.custom_script_for_head }}
+    {% style %}
+      {% for scheme in settings.color_schemes -%}
+      	:root {
+      	--{{ scheme.id }}:                      {% if scheme.settings.primary_bg_gradient != empty %}{{ scheme.settings.primary_bg_gradient }}{% else %}{{ scheme.settings.primary_bg }}{% endif %};
+      	--{{ scheme.id }}_solid:                {{ scheme.settings.primary_bg }};
+      	--{{ scheme.id }}_bg:                   var(--{{ scheme.id }});
+      	--{{ scheme.id }}_bg_dark:              {% assign primary_bg_hex = scheme.settings.primary_bg | color_to_hex  %}{% if primary_bg_hex == '#ffffff' or primary_bg_hex == '#FFFFFF' %}var(--{{ scheme.id }}_bg);{% else %}{{ scheme.settings.primary_bg | color_darken: 2 }};{% endif %}
+      	--{{ scheme.id }}_bg_var:               var(--{{ scheme.id }}_bg_dark);
+      	--{{ scheme.id }}_bg_secondary:         {{ scheme.settings.secondary_bg }};
+      	--{{ scheme.id }}_fg:                   {{ scheme.settings.primary_fg }};
+      	--{{ scheme.id }}_fg_sat:               {{ scheme.settings.primary_fg | color_lighten: 75 }};
+      	--{{ scheme.id }}_title:                {% if scheme.settings.title_color_gradient != empty %}{{ scheme.settings.title_color_gradient }}{% else %}{{ scheme.settings.title_color }}{% endif %};
+      	--{{ scheme.id }}_title_solid:          {{ scheme.settings.title_color }};
+
+      	--{{ scheme.id }}_primary_btn_bg:       {{ scheme.settings.primary_button_bg }};
+      	--{{ scheme.id }}_primary_btn_bg_dark:  {{ scheme.settings.primary_button_bg | color_darken: 7 }};
+      	--{{ scheme.id }}_primary_btn_fg:       {{ scheme.settings.primary_button_fg }};
+      	--{{ scheme.id }}_secondary_btn_bg:     {{ scheme.settings.secondary_button_bg }};
+      	--{{ scheme.id }}_secondary_btn_bg_dark:{{ scheme.settings.secondary_button_bg | color_darken: 7 }};
+      	--{{ scheme.id }}_secondary_btn_fg:     {{ scheme.settings.secondary_button_fg }};
+      	--{{ scheme.id }}_tertiary_btn_bg:      {{ scheme.settings.tertiary_button_bg }};
+      	--{{ scheme.id }}_tertiary_btn_bg_dark: {{ scheme.settings.tertiary_button_bg | color_darken: 7 }};
+      	--{{ scheme.id }}_tertiary_btn_fg:      {{ scheme.settings.tertiary_button_fg }};
+      	--{{ scheme.id }}_btn_bg:       		var(--{{ scheme.id }}_primary_btn_bg);
+      	--{{ scheme.id }}_btn_bg_dark:  		var(--{{ scheme.id }}_primary_btn_bg_dark);
+      	--{{ scheme.id }}_btn_fg:       		var(--{{ scheme.id }}_primary_btn_fg);
+      	--{{ scheme.id }}_bd:                   {{ scheme.settings.primary_bd }};
+      	--{{ scheme.id }}_input_bg:             {{ scheme.settings.input_bg }};
+      	--{{ scheme.id }}_input_fg:             {{ scheme.settings.input_fg }};
+      	--{{ scheme.id }}_input_pl:             {{ scheme.settings.input_fg | color_lighten: 10 }};
+      	--{{ scheme.id }}_accent:               {{ scheme.settings.accent }};
+      	--{{ scheme.id }}_accent_gradient:      {% if scheme.settings.accent_gradient != empty %}{{ scheme.settings.accent_gradient }}{% else %}{{ scheme.settings.accent }}{% endif %};
+      	{% assign brightness = scheme.settings.primary_fg | color_brightness %}
+      	--{{ scheme.id }}_fg_brightness: {% if brightness >= 128 %}1{% else %}0{% endif %}; {% comment %}0 is dark, 1 is light{% endcomment %}
+      	{% if scheme.id == settings.default_color_scheme.id %}
+      		--primary_text_rgba:  				{{ scheme.settings.primary_fg | color_to_rgb }};
+      		--body_bg:            				var(--{{ scheme.id }}_bg);
+      	{% endif %}
+      	}
+      	{%- assign input_fg = scheme.settings.input_fg | remove: '#' -%}
+      	{% if scheme.id == settings.default_color_scheme.id %}select, .bv_atual, #root #content .f8sr select,{% endif %}
+      	[class*="palette-{{ scheme.id }}"] select,
+      	[class*="palette-{{ scheme.id }}"] .bv_atual,
+      	#root #content [class*="palette-{{ scheme.id }}"] .f8sr select {
+      	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' style='enable-background:new 0 0 12.7 7.7' viewBox='0 0 12.7 7.7' fill='%23{{ input_fg }}'%3E%3Cpath d='M.3.2c.4-.3.9-.3 1.2.1l4.7 5.3 5-5.3c.3-.3.9-.4 1.2 0 .3.3.4.9 0 1.2l-5.7 6c-.1.1-.3.2-.5.2s-.5-.1-.6-.3l-5.3-6C-.1 1.1-.1.5.3.2z'/%3E%3C/svg%3E");
+      	}
+      	{% if scheme.id == settings.default_color_scheme.id %}
+      		#root input[type="date"], #root .datepicker-input { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' style='enable-background:new 0 0 14 16' viewBox='0 0 14 16' fill='%23{{ input_fg }}'%3E%3Cpath d='M12.3 2H11V.8c0-.5-.3-.8-.7-.8s-.8.3-.8.8V2h-5V.8c0-.5-.3-.8-.7-.8S3 .3 3 .8V2H1.8C.8 2 0 2.8 0 3.8v10.5c0 1 .8 1.8 1.8 1.8h10.5c1 0 1.8-.8 1.8-1.8V3.8c-.1-1-.9-1.8-1.8-1.8zm.2 12.3c0 .1-.1.3-.3.3H1.8c-.1 0-.3-.1-.3-.3V7.5h11v6.8zm0-8.3h-11V3.8c0-.1.1-.3.3-.3h10.5c.1 0 .3.1.3.3V6z'/%3E%3C/svg%3E"); }
+      	{% endif %}
+      	{% if scheme.id == settings.default_color_scheme.id %}select:focus, #root #content .f8sr select:focus,{% endif %}
+      	[class*="palette-{{ scheme.id }}"] select:focus,
+      	#root #content [class*="palette-{{ scheme.id }}"] .f8sr select:focus {
+      	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' style='enable-background:new 0 0 12.7 7.7' viewBox='0 0 12.7 7.7' fill='%23{{ input_fg }}'%3E%3Cpath d='M12.4 7.5c-.4.3-.9.3-1.2-.1L6.5 2.1l-5 5.3c-.3.3-.9.4-1.2 0-.3-.3-.4-.9 0-1.2L6 .2c.1-.1.3-.2.5-.2.3 0 .5.1.6.3l5.3 6c.4.3.4.9 0 1.2z'/%3E%3C/svg%3E");
+      	}
+      	{% if scheme.id == settings.default_color_scheme.id %}:root, {% endif %}[class*="palette-{{ scheme.id }}"], [data-active-content*="{{ scheme.id }}"] {
+      	--primary_bg:             var(--{{ scheme.id }}_bg);
+      	--bg_secondary:           var(--{{ scheme.id }}_bg_secondary);
+      	--primary_text:           var(--{{ scheme.id }}_fg);
+      	--primary_text_h:         var(--{{ scheme.id }}_title);
+      	--headings_text:          var(--primary_text_h);
+      	--headings_text_solid:    var(--{{ scheme.id }}_title_solid);
+      	--primary_bg_btn:         var(--{{ scheme.id }}_primary_btn_bg);
+      	--primary_bg_btn_dark:    var(--{{ scheme.id }}_primary_btn_bg_dark);
+      	--primary_btn_text:       var(--{{ scheme.id }}_primary_btn_fg);
+      	--secondary_bg_btn:       var(--{{ scheme.id }}_secondary_btn_bg);
+      	--secondary_bg_btn_dark:  var(--{{ scheme.id }}_secondary_btn_bg_dark);
+      	--secondary_btn_text:     var(--{{ scheme.id }}_secondary_btn_fg);
+      	--tertiary_bg_btn:        var(--{{ scheme.id }}_tertiary_btn_bg);
+      	--tertiary_bg_btn_dark:   var(--{{ scheme.id }}_tertiary_btn_bg_dark);
+      	--tertiary_btn_text:      var(--{{ scheme.id }}_tertiary_btn_fg);
+      	--custom_input_bg:        var(--{{ scheme.id }}_input_bg);
+      	--custom_input_fg:        var(--{{ scheme.id }}_input_fg);
+      	--custom_input_pl:        var(--{{ scheme.id }}_input_pl);
+      	--custom_input_bd:        var(--{{ scheme.id }}_bd);
+      	--custom_bd:              var(--custom_input_bd);
+      	--secondary_bg: 		  var(--primary_bg_btn);
+      	--accent:                 var(--{{ scheme.id }}_accent);
+      	--accent_gradient:        var(--{{ scheme.id }}_accent_gradient);
+      	--primary_text_brightness:var(--{{ scheme.id }}_fg_brightness);
+      	}
+      	{% if scheme.settings.title_color_gradient != empty %}
+      		{% if scheme.id == settings.default_color_scheme.id %}h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,{% endif %}
+      		[class*="palette-{{ scheme.id }}"] h1, [data-active-content*="{{ scheme.id }}"] h1,
+      		[class*="palette-{{ scheme.id }}"] h2, [data-active-content*="{{ scheme.id }}"] h2,
+      		[class*="palette-{{ scheme.id }}"] h3, [data-active-content*="{{ scheme.id }}"] h3,
+      		[class*="palette-{{ scheme.id }}"] h4, [data-active-content*="{{ scheme.id }}"] h4,
+      		[class*="palette-{{ scheme.id }}"] h5, [data-active-content*="{{ scheme.id }}"] h5,
+      		[class*="palette-{{ scheme.id }}"] h6, [data-active-content*="{{ scheme.id }}"] h6,
+      		[class*="palette-{{ scheme.id }}"] .ff-heading, [data-active-content*="{{ scheme.id }}"] .ff-heading {
+      		background: var(--headings_text);
+      		background-clip: text; -webkit-background-clip: text;
+      		text-fill-color: transparent; -webkit-text-fill-color: transparent;
+      		line-height: max(1.25, var(--main_lh_h));
+      		}
+      	{% endif %}
+      {% endfor %}
+    {% endstyle %}
+  </head>
+  <body class="template-{{ template.name | handle }}">
+    <div id="root">
+      {%- render 'accessible-nav' -%}
+      {%- sections 'header-group' -%}
+      <main id="content">
+        {{ content_for_layout }}
+        {%- sections 'footer-group' -%}
+      </main>
+      {%- liquid
+        if template.name == 'product'
+          section 'sticky-add-to-cart'
+        endif
+        unless customer
+          render 'mobile-login-dropdown'
+        endunless
+        render 'side-cart-container'
+        render 'quickshop-container'
+        render 'shop-the-look-container'
+        render 'pickup-availability-container'
+
+        if settings.show_newsletterpopup
+          render 'newsletter-popup'
+        endif
+        if settings.show_age_verify_popup
+          render 'age-verify-popup'
+        elsif settings.show_cookiebanner != 'none'
+          render 'cookie-banner'
+        endif
+        if settings.back_to_top_button
+          render 'back-to-top-button'
+        endif
+        render 'upsell-popup'
+      -%}
+    </div>
+    {% render 'global-variables' %}
+    {%- if rtl_languages contains localization.language.iso_code -%}
+      <link media="screen" rel="stylesheet" href="{{ 'rtl.css' | asset_url }}">
+    {%- endif -%}
+    {% render 'color-swatches' %}
+    <script defer src="{{ 'scripts.js' | asset_url }}"></script>
+    <script defer src="{{ 'custom.js' | asset_url }}"></script>
+    {%- if request.design_mode -%}<script defer src="{{ 'backend-listeners.js' | asset_url }}"></script>{%- endif -%}
+    {{ settings.custom_script_for_body }}
+   <script>
+(function() {
+  // Labels plus jolis pour les familles (pour le tableau)
+  var familyLabels = {
+    clownfish: "Poisson clown",
+    firefish: "Firefish / Dartfish",
+    royal_gramma: "Royal Gramma & basslets",
+    yellow_clown_goby: "Yellow Clown Goby",
+    coral_beauty: "Dwarf angelfish",
+    cardinalfish: "Cardinalfish",
+    chromis: "Chromis",
+    goby: "Gobies",
+    wrasse: "Wrasses",
+    tang: "Tangs / Chirurgiens",
+    blenny: "Blennies",
+    damsel: "Damselfish",
+    dottyback: "Dottybacks / Pseudochromis",
+    anthias: "Anthias",
+    butterflyfish: "Butterflyfish",
+    hawkfish: "Hawkfish",
+    rabbitfish: "Rabbitfish / Foxface",
+    dragonet: "Dragonets / Mandarins",
+    large_angelfish: "Grands angelfish",
+    eel: "Murènes / eels",
+    puffer: "Puffers / boxfish / cowfish",
+    filefish: "Filefish",
+    frogfish: "Frogfish / anglers",
+    grouper: "Groupers",
+    jawfish: "Jawfish",
+    lionfish: "Lionfish / scorpionfish",
+    pipefish: "Pipefish & seahorses",
+    squirrelfish: "Squirrelfish / soldierfish",
+    tilefish: "Tilefish",
+    trigger_reef: "Triggerfish « plus calmes »",
+    trigger_nonreef: "Triggerfish (non récifal)"
+  };
+
+  // --- Config des poissons (familles & variantes) ---
+  var fishConfig = {
+    clownfish: {
+      variants: {
+        ocellaris_cb: { lengthInches: 4.25, minGallons: 20 }
+      }
+    },
+    firefish: {
+      variants: {
+        purple:    { lengthInches: 3.25, minGallons: 20 },
+        helfrichi: { lengthInches: 3.25, minGallons: 20 }
+      }
+    },
+    royal_gramma: {
+      variants: {
+        royal_gramma_std: { lengthInches: 3, minGallons: 30 }
+      }
+    },
+    yellow_clown_goby: {
+      variants: {
+        yellow_clown_goby_std: { lengthInches: 1.5, minGallons: 20 }
+      }
+    },
+    coral_beauty: {
+      variants: {
+        flame_angelfish_std: { lengthInches: 4, minGallons: 70 },
+        coral_beauty_std:    { lengthInches: 6, minGallons: 70 }
+      }
+    },
+    cardinalfish: {
+      variants: {
+        pajama_cardinalfish_std: { lengthInches: 3, minGallons: 30 }
+      }
+    },
+    chromis: {
+      variants: {
+        green_chromis: { lengthInches: 3, minGallons: 30 }
+      }
+    },
+    goby: {
+      variants: {
+        goby_clown:    { lengthInches: 2, minGallons: 15 },
+        goby_watchman: { lengthInches: 4, minGallons: 30 },
+        goby_sand:     { lengthInches: 5, minGallons: 40 }
+      }
+    },
+    wrasse: {
+      variants: {
+        wrasse_fairy: { lengthInches: 4, minGallons: 50 },
+        wrasse_other: { lengthInches: 5, minGallons: 75 }
+      }
+    },
+    tang: {
+      variants: {
+        tang_med:   { lengthInches: 8,  minGallons: 75 },
+        tang_large: { lengthInches: 10, minGallons: 120 }
+      }
+    },
+    blenny: {
+      variants: {
+        blenny_std: { lengthInches: 4, minGallons: 30 }
+      }
+    },
+    damsel: {
+      variants: {
+        damsel_std: { lengthInches: 3, minGallons: 30 }
+      }
+    },
+    dottyback: {
+      variants: {
+        dottyback_std: { lengthInches: 3, minGallons: 30 }
+      }
+    },
+    anthias: {
+      variants: {
+        anthias_std: { lengthInches: 4, minGallons: 70 }
+      }
+    },
+    butterflyfish: {
+      variants: {
+        butterfly_std: { lengthInches: 7, minGallons: 90 }
+      }
+    },
+    hawkfish: {
+      variants: {
+        hawkfish_std: { lengthInches: 5, minGallons: 40 }
+      }
+    },
+    rabbitfish: {
+      variants: {
+        rabbitfish_std: { lengthInches: 8, minGallons: 90 }
+      }
+    },
+    dragonet: {
+      variants: {
+        dragonet_std: { lengthInches: 3, minGallons: 30 }
+      }
+    },
+    large_angelfish: {
+      variants: {
+        large_angel_std: { lengthInches: 10, minGallons: 180 }
+      }
+    },
+    eel: {
+      variants: {
+        eel_std: { lengthInches: 24, minGallons: 120 }
+      }
+    },
+    puffer: {
+      variants: {
+        puffer_std: { lengthInches: 6, minGallons: 75 }
+      }
+    },
+    filefish: {
+      variants: {
+        filefish_std: { lengthInches: 5, minGallons: 40 }
+      }
+    },
+    frogfish: {
+      variants: {
+        frogfish_std: { lengthInches: 5, minGallons: 40 }
+      }
+    },
+    grouper: {
+      variants: {
+        grouper_std: { lengthInches: 12, minGallons: 180 }
+      }
+    },
+    jawfish: {
+      variants: {
+        jawfish_std: { lengthInches: 4, minGallons: 30 }
+      }
+    },
+    lionfish: {
+      variants: {
+        lionfish_std: { lengthInches: 10, minGallons: 120 }
+      }
+    },
+    pipefish: {
+      variants: {
+        pipefish_std: { lengthInches: 5, minGallons: 40 }
+      }
+    },
+    squirrelfish: {
+      variants: {
+        squirrelfish_std: { lengthInches: 7, minGallons: 75 }
+      }
+    },
+    tilefish: {
+      variants: {
+        tilefish_std: { lengthInches: 6, minGallons: 70 }
+      }
+    },
+    trigger_reef: {
+      variants: {
+        trigger_reef_std: { lengthInches: 8, minGallons: 125 }
+      }
+    },
+    trigger_nonreef: {
+      variants: {
+        trigger_nonreef_std: { lengthInches: 10, minGallons: 180 }
+      }
+    }
+  };
+
+  window.fishCalc = window.fishCalc || {};
+
+  // Calcule la somme totale en pouces de poissons
+  function calculerTotalPouces() {
+    var total = 0;
+    var qtyInputs = document.querySelectorAll('.fish-qty-input');
+
+    qtyInputs.forEach(function(input) {
+      var qty = parseInt(input.value, 10) || 0;
+      var family = input.getAttribute('data-family');
+      var select = document.querySelector('.fish-variant-select[data-family="' + family + '"]');
+      if (!family || !select || !fishConfig[family]) return;
+
+      var variantKey = select.value;
+      var variantConf = fishConfig[family].variants[variantKey];
+      if (!variantConf) return;
+
+      total += qty * variantConf.lengthInches;
+    });
+
+    window.fishCalc.totalInches = total;
+    return total;
+  }
+
+  function mettreAJourTableauResultats() {
+    var tbody = document.getElementById('resultTableBody');
+    if (!tbody) return;
+
+    tbody.innerHTML = '';
+    var qtyInputs = document.querySelectorAll('.fish-qty-input');
+    var any = false;
+
+    qtyInputs.forEach(function(input) {
+      var qty = parseInt(input.value, 10) || 0;
+      if (!qty || qty <= 0) return;
+
+      var family = input.getAttribute('data-family');
+      var select = document.querySelector('.fish-variant-select[data-family="' + family + '"]');
+      if (!family || !select || !fishConfig[family]) return;
+
+      var variantKey = select.value;
+      var variantConf = fishConfig[family].variants[variantKey];
+      if (!variantConf) return;
+
+      any = true;
+      var lengthInches = variantConf.lengthInches || 0;
+      var minGallons = variantConf.minGallons || 0;
+      var totalInches = qty * lengthInches;
+
+      var tr = document.createElement('tr');
+
+      var tdFamily = document.createElement('td');
+      tdFamily.textContent = familyLabels[family] || family;
+      tr.appendChild(tdFamily);
+
+      var tdVariant = document.createElement('td');
+      tdVariant.textContent = select.options[select.selectedIndex].text;
+      tr.appendChild(tdVariant);
+
+      var tdQty = document.createElement('td');
+      tdQty.textContent = qty;
+      tr.appendChild(tdQty);
+
+      var tdLen = document.createElement('td');
+      tdLen.textContent = lengthInches.toFixed(1);
+      tr.appendChild(tdLen);
+
+      var tdTotal = document.createElement('td');
+      tdTotal.textContent = totalInches.toFixed(1);
+      tr.appendChild(tdTotal);
+
+      var tdGallons = document.createElement('td');
+      tdGallons.textContent = minGallons > 0 ? (minGallons + " gal min.") : "-";
+      tr.appendChild(tdGallons);
+
+      tbody.appendChild(tr);
+    });
+
+    if (!any) {
+      var trEmpty = document.createElement('tr');
+      trEmpty.className = 'result-table-empty';
+      var tdEmpty = document.createElement('td');
+      tdEmpty.colSpan = 6;
+      tdEmpty.textContent = 'Aucun poisson sélectionné pour le moment.';
+      trEmpty.appendChild(tdEmpty);
+      tbody.appendChild(trEmpty);
+    }
+  }
+
+  function recalculerPopulationPoissons() {
+    var tankInput   = document.getElementById('tankGallons');
+    var rockInput   = document.getElementById('rockLbs');
+    var rockRecP    = document.getElementById('rockRecommendation');
+    var filtSelect  = document.getElementById('filtration');
+    var refugeCb    = document.getElementById('hasRefuge');
+    var usageElem   = document.getElementById('tankUsage');
+    var adviceElem  = document.getElementById('adviceText');
+    var barElem     = document.getElementById('tankUsageBar');
+    var badgeElem   = document.getElementById('tankUsageBadge');
+
+    var gallons = tankInput ? (parseFloat(tankInput.value) || 0) : 0;
+    var rockLbs = rockInput ? (parseFloat(rockInput.value) || 0) : 0;
+
+    // Texte de roche vivante
+    if (rockRecP) {
+      if (gallons > 0) {
+        var recommended = gallons;
+        var txt = 'Recommandation : environ ' + recommended.toFixed(1) +
+          ' lb de roche vivante pour un bac de ' + gallons.toFixed(1) + ' gallons. ' +
+          'Vous avez indiqué ' + rockLbs.toFixed(1) + ' lb. ' +
+          'La règle des 2 po de poissons par gallon s’applique seulement lorsque vous êtes proche de 1 lb de roche par gallon.';
+        rockRecP.textContent = txt;
+      } else {
+        rockRecP.textContent =
+          'Recommandation générale : 1 lb de roche vivante par gallon. ' +
+          'La règle des 2 po de poissons par gallon suppose que cette quantité de roches est respectée.';
+      }
+    }
+
+    // Met à jour le tableau des poissons sélectionnés
+    mettreAJourTableauResultats();
+
+    if (!usageElem || !adviceElem) return;
+
+    if (gallons <= 0) {
+      usageElem.textContent = '-';
+      adviceElem.textContent = 'Entrez le volume de votre aquarium pour démarrer le calcul.';
+      if (barElem) barElem.style.width = '0%';
+      if (badgeElem) {
+        badgeElem.textContent = 'En attente de données.';
+        badgeElem.className = 'progress-note status-idle';
+      }
+      return;
+    }
+
+    // Capacité brute (2 po/gal)
+    var baseCapacityInches = gallons * 2;
+
+    // Facteur roche vivante
+    var rockFactor = 1;
+    if (gallons > 0) {
+      var ratio = rockLbs / gallons;
+      if (ratio >= 1) rockFactor = 1;
+      else if (ratio > 0) rockFactor = ratio;
+      else rockFactor = 0;
+    }
+
+    // Facteur filtration
+    var filtrationValue = filtSelect ? filtSelect.value : 'hob';
+    var filtrationFactor = 1;
+    if (filtrationValue === 'basic')    filtrationFactor = 0.9;
+    if (filtrationValue === 'hob')      filtrationFactor = 1.0;
+    if (filtrationValue === 'canister') filtrationFactor = 1.05;
+    if (filtrationValue === 'sump')     filtrationFactor = 1.10;
+
+    // Facteur refuge
+    var refugeFactor = (refugeCb && refugeCb.checked) ? 1.05 : 1.0;
+
+    // Facteur total de système
+    var systemFactor = rockFactor * filtrationFactor * refugeFactor;
+
+    var effectiveCapacityInches = baseCapacityInches * systemFactor;
+    var totalInches = calculerTotalPouces();
+
+    window.fishCalc.baseCapacityInches      = baseCapacityInches;
+    window.fishCalc.effectiveCapacityInches = effectiveCapacityInches;
+    window.fishCalc.rockFactor              = rockFactor;
+    window.fishCalc.filtrationFactor        = filtrationFactor;
+    window.fishCalc.refugeFactor            = refugeFactor;
+
+    if (effectiveCapacityInches <= 0) {
+      usageElem.textContent = totalInches.toFixed(1) + ' po / capacité non disponible (pas assez de roche).';
+      adviceElem.textContent = 'Vous n’avez pas assez de roche vivante pour appliquer la règle des 2 po par gallon. Augmentez la quantité de roche avant d’ajouter des poissons.';
+      if (barElem) barElem.style.width = '0%';
+      if (badgeElem) {
+        badgeElem.textContent = 'Pas assez de roche vivante.';
+        badgeElem.className = 'progress-note status-alert';
+      }
+      return;
+    }
+
+    var percent = (totalInches / effectiveCapacityInches) * 100;
+    if (!isFinite(percent)) percent = 0;
+
+    usageElem.textContent =
+      totalInches.toFixed(1) + ' po / ' +
+      effectiveCapacityInches.toFixed(1) + ' po (' +
+      percent.toFixed(0) + '%)';
+
+    // Barre de progression type AquaStockPro
+    if (barElem) {
+      var clamped = Math.max(0, Math.min(percent, 130));
+      barElem.style.width = clamped + '%';
+
+      if (percent < 70) {
+        barElem.style.background = '#4caf50';
+      } else if (percent <= 100) {
+        barElem.style.background = '#ff9800';
+      } else {
+        barElem.style.background = '#f44336';
+      }
+    }
+
+    if (badgeElem) {
+      if (totalInches === 0) {
+        badgeElem.textContent = 'Aucun poisson sélectionné.';
+        badgeElem.className = 'progress-note status-idle';
+      } else if (percent < 70) {
+        badgeElem.textContent = 'Zone confortable.';
+        badgeElem.className = 'progress-note status-ok';
+      } else if (percent <= 100) {
+        badgeElem.textContent = 'Vous approchez de la limite recommandée.';
+        badgeElem.className = 'progress-note status-warn';
+      } else {
+        badgeElem.textContent = 'Surpeuplement : à corriger.';
+        badgeElem.className = 'progress-note status-alert';
+      }
+    }
+
+    if (totalInches === 0) {
+      adviceElem.textContent = 'Aucun poisson sélectionné pour le moment. Ajoutez des poissons pour voir l’impact sur la population.';
+    } else if (percent < 70) {
+      adviceElem.textContent = 'Votre population est dans une zone confortable. Vous avez encore une bonne marge tant que la qualité de l’eau reste stable.';
+    } else if (percent <= 100) {
+      adviceElem.textContent = 'Vous approchez de la capacité recommandée. Surveillez vos paramètres et évitez d’ajouter trop d’autres poissons.';
+    } else {
+      adviceElem.textContent = 'Vous dépassez la capacité recommandée pour ce volume et cette configuration. Il est conseillé de réduire la population ou d’améliorer le système (plus de volume, de roches, meilleure filtration).';
+    }
+  }
+
+  function initTankTypeToggle() {
+    var buttons = document.querySelectorAll('.tank-type-button');
+    var noteElem = document.getElementById('tankTypeNote');
+
+    function labelForType(type) {
+      if (type === 'reef')      return 'Bac récifal';
+      if (type === 'fish-only') return 'Fish only (eau salée sans coraux)';
+      if (type === 'fowlr')     return 'FOWLR (fish + roches vivantes)';
+      return type;
+    }
+
+    buttons.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        buttons.forEach(function(b) { b.classList.remove('is-active'); });
+        btn.classList.add('is-active');
+
+        var t = btn.getAttribute('data-tank-type') || 'reef';
+        window.fishCalc.tankType = t;
+
+        if (noteElem) {
+          noteElem.textContent = 'Type de bac sélectionné : ' + labelForType(t) + '.';
+        }
+
+        recalculerPopulationPoissons();
+      });
+    });
+
+    window.fishCalc.tankType = 'reef';
+  }
+
+  function initEventListeners() {
+    document.addEventListener('input', function(e) {
+      if (
+        e.target.matches('.fish-qty-input') ||
+        e.target.matches('.fish-variant-select') ||
+        e.target.id === 'tankGallons' ||
+        e.target.id === 'rockLbs' ||
+        e.target.id === 'filtration' ||
+        e.target.id === 'hasRefuge'
+      ) {
+        recalculerPopulationPoissons();
+      }
+    });
+  }
+
+  // ⚠️ IMPORTANT POUR SHOPIFY :
+  // On appelle directement les fonctions (pas de DOMContentLoaded)
+  initTankTypeToggle();
+  initEventListeners();
+  recalculerPopulationPoissons();
+})();
+</script>
+
+  </body>
+</html>

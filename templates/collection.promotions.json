@@ -1,0 +1,169 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "section_slideshow_eMHdXF": {
+      "type": "section-slideshow",
+      "blocks": {
+        "slide_kLmMR9": {
+          "type": "slide",
+          "settings": {
+            "layout": "background",
+            "overlay_opacity": 5,
+            "color_palette": "scheme-2",
+            "text_position": "align-start text-start",
+            "title": "<h1><span style=\"text-decoration:underline\">Everything for </span><span style=\"text-decoration:underline\">{{ collection.title }}</span></h1><h5>Wholesale Essentials for Modern Pet Retailers</h5>",
+            "title_underline_style": "accent",
+            "text": "<p>From cozy beds to clever toys and premium nutrition,<br/>explore our {{ collection.title }} products ready for resale.</p>",
+            "show_first_link": false,
+            "first_link_text": "Button",
+            "first_link_url": "/",
+            "first_button_style": "primary plain",
+            "show_second_link": false,
+            "second_link_text": "Button",
+            "second_link_url": "",
+            "second_button_style": "secondary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_kLmMR9"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "height": "32/9",
+        "width": "boxed",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "16/9",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_featured_products_FEPDGz": {
+      "type": "section-featured-products",
+      "name": "t:sections.featured_products.presets.name",
+      "settings": {
+        "layout": "slider",
+        "number_of_items": 4,
+        "text_alignment": "aside",
+        "title": "<h3>Featured {{ collection.title }} Products</h3>",
+        "title_underline_style": "none",
+        "text": "<p>Discover a curated selection of our most popular {{ collection.title }} products,<br/><strong>trusted by retailers across Europe</strong>. </p>",
+        "show_link": true,
+        "link_text": "",
+        "link_url": "/",
+        "button_style": "primary plain",
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_color_picker": false,
+        "enable_quick_buy_compact": false,
+        "mobile_layout": "slider",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_collection_list_Qey4FW": {
+      "type": "section-collection-list",
+      "name": "t:sections.collection_list.presets.name",
+      "settings": {
+        "image_ratio": "square",
+        "fill_images": true,
+        "layout": "slider",
+        "number_of_items": 6,
+        "text_alignment": "start",
+        "title": "<h3>Choose a category</h3>",
+        "title_underline_style": "none",
+        "show_link": false,
+        "link_text": "Button",
+        "link_url": "/",
+        "button_style": "primary plain",
+        "collection_title_size": "h5",
+        "mobile_layout": "slider",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h2",
+            "text_alignment": "left",
+            "title": ""
+          }
+        },
+        "sorting": {
+          "type": "sorting",
+          "settings": {}
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {}
+        },
+        "423fb7f6-2c97-4420-8211-d45378349d2a": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "text_alignment": "left",
+            "enable_read_more": false,
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "sorting",
+        "product_grid",
+        "423fb7f6-2c97-4420-8211-d45378349d2a"
+      ],
+      "settings": {
+        "pagination_qty": 12,
+        "pagination_type": "pages",
+        "show_amount_of_products_in_collection": true,
+        "productview_type": "list",
+        "products_per_row": 3,
+        "show_collection_image": false,
+        "enable_filters": true,
+        "enable_menu": true,
+        "enable_collections": true,
+        "filters_menu_alignment": "left",
+        "collections_menu": [],
+        "filter_sticky": true,
+        "filters_show_more_limit": 7,
+        "image_swatches_size": "xs",
+        "image_swatches_fill_images": true,
+        "image_swatches_show_in_circle": true,
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_color_picker": false,
+        "enable_quick_buy_compact": false,
+        "products_per_row_mobile": "2",
+        "filter_mobile_sticky": false
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "section_slideshow_eMHdXF",
+    "section_featured_products_FEPDGz",
+    "section_collection_list_Qey4FW",
+    "main-collection"
+  ]
+}
