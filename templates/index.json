@@ -1,1 +1,798 @@
-{"sections":{"section_grid_yyCXme":{"type":"section-grid","blocks":{"image_UwVfdj":{"type":"image","name":"Entreprise locale au coeur de la VDQ","settings":{"overlay_opacity":100,"color_palette":"scheme-3","text_position":"text-start","cols":2,"rows":1,"title":"<h1>Entreprise locale au coeur de la <span style=\"text-decoration:underline\">Ville de Québec.<\/span><\/h1>","title_underline_style":"accent","text":"<p>Spécialiste en eau salée<\/p>","show_link":false,"link_text":"Magasiner maintenant","link_url":"\/","button_style":"primary plain","show_overlay_link":true,"overlay_url":"","show_look":false,"product_list":[],"look_btn_style":"buy_button plain","look_position":"end","show_look_label":false,"look_label_text":"Wholesale"}},"image_wQVVFN":{"type":"image","name":"Poissons","settings":{"image":"shopify:\/\/shop_images\/A5694FF6-E2E3-4A9D-AED6-7EC00F1839A2.jpg","overlay_opacity":5,"color_palette":"scheme-4","text_position":"align-bottom text-start","cols":2,"rows":2,"title":"","title_underline_style":"none","text":"<p><strong>Poissons<\/strong><\/p><h1>100+<\/h1>","show_link":false,"link_text":"Button","link_url":"shopify:\/\/collections\/poissons","button_style":"secondary plain","show_overlay_link":true,"overlay_url":"shopify:\/\/collections\/poissons","show_look":false,"product_list":[],"look_btn_style":"buy_button plain","look_position":"end","show_look_label":true,"look_label_text":"Livraison locale disponible!"}},"image_zrQRwD":{"type":"image","name":"Coraux","settings":{"image":"shopify:\/\/shop_images\/7E670223-F552-4262-95BA-DD42194B60A0.jpg","overlay_opacity":25,"color_palette":"scheme-4","text_position":"align-bottom text-start","cols":1,"rows":1,"title":"","title_underline_style":"gradient","text":"<p><strong>Coraux<\/strong><\/p><h1>50+<\/h1>","show_link":false,"link_text":"Coraux","link_url":"shopify:\/\/collections\/coraux","button_style":"secondary plain","show_overlay_link":true,"overlay_url":"shopify:\/\/collections\/coraux","show_look":false,"product_list":[],"look_btn_style":"buy_button plain","look_position":"end","show_look_label":false,"look_label_text":"Label"}},"image_8bcpJL":{"type":"image","name":"Invetébrés","settings":{"image":"shopify:\/\/shop_images\/090ec656-acdd-4aa2-a280-4f2d40dceae7.jpg","overlay_opacity":20,"color_palette":"scheme-4","text_position":"align-bottom text-start","cols":1,"rows":1,"title":"","title_underline_style":"none","text":"<p><strong>Invertébrés<\/strong><\/p><h1>60+<\/h1>","show_link":false,"link_text":"Button","link_url":"shopify:\/\/collections\/poissons","button_style":"primary plain","show_overlay_link":true,"overlay_url":"shopify:\/\/collections\/invertebres","show_look":false,"product_list":[],"look_btn_style":"buy_button plain","look_position":"end","show_look_label":false,"look_label_text":"Label"}}},"block_order":["image_UwVfdj","image_wQVVFN","image_zrQRwD","image_8bcpJL"],"settings":{"number_of_columns":"4","height":"size-m","width":"boxed","space_between":8,"image_zoom":true,"image_move":false,"layout_mobile":"rows","mobile_height":"size-xs","spacing_desktop":60,"spacing_mobile":30,"fix_zindex":0}},"1660291177d9f45101":{"type":"section-collection-list","name":"Explorer notre inventaire","settings":{"collections":["clownfish","wysiwyg","anemone","angelfish-1","crevettes","dottyback","dragonets","damselfish","crabe","cuirs","blenny","basslet","betta","foxface-rabbitfish","goby","goniastrea","goniopora","hawkfish","invertebres","macroalgue","montipora","mou","lobophyllia","lps","oursin","poisson-chat","poissons","rasbora","rhodactis"],"image_ratio":"square","fill_images":true,"layout":"slider","number_of_items":6,"text_alignment":"start","title":"<h3>Explorer notre inventaire<\/h3><h4>Vivant<\/h4>","title_underline_style":"none","show_link":true,"link_text":"View all","link_url":"","button_style":"secondary link","collection_title_size":"h5","mobile_layout":"slider","spacing_desktop":60,"spacing_mobile":30,"fix_zindex":0}},"section_featured_products_8GP3rz":{"type":"section-featured-products","name":"Nourriture","settings":{"products":["polyp-lab-nourriture-pour-coraux-reef-roids-haute-efficacite","plankton-1000ml","bta-anemone-diet","naturox-granules-coulants-pour-poissons-marins-1-1-5mm","cyclopod-cube-1-75oz","fancy-guppy-0-77-oz","crab-cuisine-1-76-oz","hikari-bio-pure-frozen-spirulina-mysis-shrimp-cubes-3-5-oz","nourriture-hikari-marine-s-50g","coral-cookies","hot-sauce","mini-munch"],"layout":"slider","number_of_items":5,"text_alignment":"start","title":"<h4>Nourriture<\/h4>","title_underline_style":"none","text":"","show_link":false,"link_text":"Button","link_url":"\/","button_style":"primary plain","enable_quick_buy_desktop":true,"enable_quick_buy_mobile":true,"enable_quick_buy_drawer":false,"enable_quick_buy_qty_selector":true,"enable_color_picker":false,"enable_quick_buy_compact":false,"mobile_layout":"slider","spacing_desktop":65,"spacing_mobile":30,"fix_zindex":0}},"section_collection_list_Nyfk3V":{"type":"section-collection-list","name":"Matériel","settings":{"collections":["roche-sable-et-sel","kit-de-depart","colle-epoxy","entretien-medicaments","ro-di","additifs","chauffage-refroidissement"],"image_ratio":"square","fill_images":true,"layout":"slider","number_of_items":6,"text_alignment":"start","title":"<h4>Matériel<\/h4>","title_underline_style":"none","show_link":true,"link_text":"View all","link_url":"","button_style":"secondary link","collection_title_size":"h5","mobile_layout":"slider","spacing_desktop":60,"spacing_mobile":30,"fix_zindex":0}},"section_icon_text_blocks_6UaKpH":{"type":"section-icon-text-blocks","blocks":{"text_kMgh7N":{"type":"text","name":"Slogan","settings":{"icon":"none","image_svg":"","image_height":90,"title":"","text":"<h2>Nous aidons les aquariophiles de Québec et des environs à réussir leur aquarium, avec un service local et des produits de qualité.<\/h2>","link_color":"inherit","show_link":true,"link_text":"Button","link_url":"","button_style":"primary plain"}}},"block_order":["text_kMgh7N"],"name":"t:sections.icon_text_blocks.presets.name","settings":{"items_width":4,"text_alignment":"start","title":"<h2><\/h2><h2><\/h2>","title_underline_style":"none","text":"","font_size":"16px","show_link":true,"link_text":"Button","link_url":"","button_style":"primary plain","blocks_text_alignment":"start","blocks_title_font":"primary","blocks_title_size":"h2","layout_mobile":"slider","mobile_blocks_text_alignment":"center","spacing_desktop":80,"spacing_mobile":30,"fix_zindex":0}},"1662644641662a3424":{"type":"section-promo-gallery","blocks":{"1662644641f8605a6c-0":{"type":"image","settings":{"overlay_opacity_img":0,"color_palette":"scheme-3","overlay_opacity":100,"text_position":"align-middle","title":"PICO","title_underline_style":"accent","text":"<p><strong>Commencez à accumuler des avantages<\/strong><\/p><p>- Gagnez <strong>1 point par dollar dépensé<\/strong><\/p><p>- Recevez <strong>un invertébré gratuit<\/strong> avec tout achat de <strong>200 $ et plus<\/strong><\/p><p>Une façon simple et abordable d’économiser tout en améliorant votre aquarium<\/p>","show_link":false,"link_text":"S'inscrire maintenant!","link_url":"\/account","button_style":"primary link","show_overlay_link":true,"overlay_url":""}},"1662644641f8605a6c-1":{"type":"image","settings":{"overlay_opacity_img":100,"color_palette":"scheme-3","overlay_opacity":100,"text_position":"align-middle","title":"<strong>NANO <\/strong>","title_underline_style":"accent","text":"<p><strong>Des récompenses qui évoluent avec vous! <\/strong><\/p><p>- Accumulez <strong>1,5 point par dollar dépensé<\/strong><\/p><p>- Recevez <strong>un frag gratuit<\/strong> avec tout achat de <strong>300 $ et plus<\/strong><\/p><p>- Profitez d’avantages exclusifs : <strong>1,5× les points en tout temps<\/strong><\/p><p><strong>- Points doublés les mercredis<\/strong><\/p><p>Idéal pour faire grandir votre aquarium sans vous ruiner<\/p>","show_link":false,"link_text":"Shop the catalogue","link_url":"\/","button_style":"primary link","show_overlay_link":true,"overlay_url":""}},"image_JdPUTT":{"type":"image","settings":{"overlay_opacity_img":100,"color_palette":"scheme-3","overlay_opacity":100,"text_position":"align-middle","title":"MAX","title_underline_style":"accent","text":"<p><strong>Des récompenses avantageuses pour aller plus loin<\/strong><\/p><p>- Obtenez <strong>2 points par dollar dépensé<\/strong><\/p><p><strong>- Livraison gratuite<\/strong> dans un rayon de <strong>20 km<\/strong><\/p><p><strong>- Accès privilégié<\/strong> aux promotions<\/p><p>- Recevez une carte donnant <strong>4 paquets Atoll gratuits<\/strong><\/p><p><strong>- 10 % de rabais<\/strong> sur tous vos achats (non cumulable)<\/p><p>Le meilleur moyen d’économiser tout en profitant pleinement du service AquaCorail<\/p>","show_link":false,"link_text":"Ask our experts","link_url":"\/","button_style":"primary link","show_overlay_link":true,"overlay_url":""}},"image_4cPgTL":{"type":"image","name":"Avantages militaires","settings":{"overlay_opacity_img":100,"color_palette":"scheme-3","overlay_opacity":100,"text_position":"align-middle","title":"PRO","title_underline_style":"none","text":"<p>Plus d'avantages, plus d'économies<\/p><p><strong>- 2,5 points par dollar dépensé<\/strong><\/p><p><strong>- Accumulez 2,5× les points en tout temps<\/strong><\/p><p><strong>- Priorité sur les nouveaux arrivages<\/strong><\/p><p><strong>- 15 % de rabais<\/strong> sur tous vos achats <em>(non cumulable)<\/em><\/p><p><strong>- 1 corail gratuit<\/strong> de notre choix dès l'obtention de la carte<\/p>","show_link":true,"link_text":"","link_url":"\/","button_style":"primary link","show_overlay_link":true,"overlay_url":""}}},"block_order":["1662644641f8605a6c-0","1662644641f8605a6c-1","image_JdPUTT","image_4cPgTL"],"name":"Système de points","settings":{"items_width":4,"width":"boxed","height":"adapt","space_between":20,"image_zoom":true,"shadow":false,"title_size_blocks":"h4","layout_mobile":"compact","height_mobile":"16\/9","spacing_desktop":70,"spacing_mobile":30,"fix_zindex":0}},"section_promo_gallery_qWhfyK":{"type":"section-promo-gallery","blocks":{"image_3Nzp6n":{"type":"image","settings":{"overlay_opacity_img":0,"color_palette":"","overlay_opacity":100,"text_position":"text-center align-middle","title":"Parrainez un ami !","title_underline_style":"none","text":"<p>Offrez-lui <strong>5 $ de rabais<\/strong>… <br\/>et recevez <strong>10$ <\/strong>lorsqu’il fait un achat.<br\/>Aucun minimum. Aucun délai. Juste des économies.<\/p>","show_link":true,"link_text":"Button","link_url":"","button_style":"primary plain","show_overlay_link":true,"overlay_url":""}},"image_DQiKTd":{"type":"image","settings":{"overlay_opacity_img":0,"color_palette":"scheme-1","overlay_opacity":100,"text_position":"text-center align-middle","title":"<a href=\"https:\/\/www.facebook.com\/share\/p\/1LDSvsjWUV\/\" title=\"https:\/\/www.facebook.com\/share\/p\/1LDSvsjWUV\/\"><span style=\"text-decoration:underline\">Avantage militaire et vétéran<\/span><\/a>","title_underline_style":"accent","text":"<p>Toujours<strong>10 % de rabais <\/strong>en magasin pour les <strong>militaires et vétérans<\/strong>, sur présentation d’une <strong>carte ou preuve militaire<\/strong>.<\/p><p><br\/>Rabais <strong>permanent<\/strong>, non cumulable, non applicable sur les commandes spéciales ou réservations. Offre disponible en boutique seulement. <\/p>","show_link":true,"link_text":"Button","link_url":"","button_style":"primary plain","show_overlay_link":true,"overlay_url":""}},"image_XiBHKh":{"type":"image","settings":{"overlay_opacity_img":0,"color_palette":"","overlay_opacity":100,"text_position":"text-center align-middle","title":"Toujours là pour vous aider!","title_underline_style":"none","text":"<p><strong>Venez nous poser vos questions sur <\/strong><a href=\"https:\/\/www.facebook.com\/profile.php?id=100067091613307\" title=\"https:\/\/www.facebook.com\/profile.php?id=100067091613307\"><strong>Facebook<\/strong><\/a><strong> ou consultez notre <\/strong><a href=\"\/blogs\/acclimatation-de-poissons\" title=\"Acclimatation de poissons\"><strong>blogue<\/strong><\/a><strong> !<\/strong><\/p>","show_link":true,"link_text":"Button","link_url":"","button_style":"primary plain","show_overlay_link":true,"overlay_url":""}}},"block_order":["image_3Nzp6n","image_DQiKTd","image_XiBHKh"],"name":"t:sections.promo_gallery.presets.name","settings":{"items_width":3,"width":"boxed","height":"16\/9","space_between":16,"image_zoom":true,"shadow":false,"title_size_blocks":"h2","layout_mobile":"rows","height_mobile":"16\/9","spacing_desktop":50,"spacing_mobile":30,"fix_zindex":0}},"section_testimonials_38mfcP":{"type":"section-testimonials","blocks":{"testimonial_RChWMi":{"type":"testimonial","settings":{"text":"<p>Service incroyable et personnalisé ! Excellents conseils qui vous permettront soit de bien débuter soit de passer à un autre niveau! Belle variété de produits mais surtout se sont des gens exceptionnels! Je recommande AquaCorail!<\/p>","score":5,"author":"Mélanie","place":""}},"testimonial_DeNweX":{"type":"testimonial","settings":{"text":"<p>Exceptionnel service et compétences ! Grand grand merci et bravo ! 100% de survie de mes coraux, poissons et invertébrés collectés jusqu’à maintenant. Commandes souples et possibilité d’obtenir des espèces peu communes. Super conseils d’alimentation et de gestion d’aquarium !<\/p>","score":5,"author":"Joachim","place":""}},"testimonial_izn3WW":{"type":"testimonial","settings":{"text":"<p>Très bon service, magnifique poisson en parfaite santé, très belle variété ! Les aquariums sont très propre, Et que dire des propriétaires, des gens très dévouée et à l’écoute!  Je recommande à tout les passionnés !<\/p>","score":5,"author":"Jessica","place":""}},"testimonial_NNrRRt":{"type":"testimonial","settings":{"text":"<p>Très bon service, super qualité de poissons et de coraux, je les recommande.<br\/>Très sympathiques et répondent à nos questions, et font un suivi. Vraiment bon service.<\/p>","score":5,"author":"Danielle","place":""}}},"block_order":["testimonial_RChWMi","testimonial_DeNweX","testimonial_izn3WW","testimonial_NNrRRt"],"name":"t:sections.testimonials.presets.name","settings":{"color_palette":"","layout":"rows","items_width":3,"autoplay":false,"autoplay_seconds":3,"text_alignment":"start","title":"<h2>Avis<\/h2>","title_underline_style":"none","text":"","show_link":true,"link_text":"Button","link_url":"","button_style":"primary plain","testimonials_boxed_overlay_opacity":10,"color_palette_stars":"secondary","spacing_desktop":50,"spacing_mobile":30,"fix_zindex":0}},"section_logo_list_MztgN3":{"type":"section-logo-list","blocks":{"logo_Rn4h9P":{"type":"logo","name":"Two Little Fishies","settings":{"image":"shopify:\/\/shop_images\/two-little-fishies-logo.webp","image_svg":"","link":""}},"logo_qiJzcH":{"type":"logo","name":"Polyp Lab","settings":{"image":"shopify:\/\/shop_images\/polyplab.jpg","image_svg":"","link":""}},"logo_JKFdMf":{"type":"logo","name":"CaribSea","settings":{"image":"shopify:\/\/shop_images\/CaribSea-Logo-2020-large.png","image_svg":"","link":""}},"logo_pkf3Jj":{"type":"logo","name":"API","settings":{"image":"shopify:\/\/shop_images\/images-2.png","image_svg":"","link":""}},"logo_n3VKzp":{"type":"logo","name":"Reef Casa","settings":{"image":"shopify:\/\/shop_images\/Reef-Casa-Logo-2023-scaled-1-1-1.webp","image_svg":"","link":""}},"logo_g8DfdN":{"type":"logo","name":"Atoll","settings":{"image":"shopify:\/\/shop_images\/image_ed8bb8be-a010-4061-a8ad-d8f8052de8fb_1200x1200_png.webp","image_svg":"","link":""}},"logo_43aFaN":{"type":"logo","name":"Salifet","settings":{"image":"shopify:\/\/shop_images\/13-large_default.webp","image_svg":"","link":""}},"logo_azMcB8":{"type":"logo","name":"Hanna Instruments","settings":{"image":"shopify:\/\/shop_images\/image-1200-ae44844223bd6b96a2fb572a80711c37.png","image_svg":"","link":"shopify:\/\/collections\/hanna"}},"logo_e8AVtG":{"type":"logo","name":"Eheim","settings":{"image":"shopify:\/\/shop_images\/images.png","image_svg":"","link":""}},"logo_GGEqd6":{"type":"logo","name":"Seapora","settings":{"image":"shopify:\/\/shop_images\/Seapora-logo.jpg","image_svg":"","link":""}},"logo_cpRy37":{"type":"logo","name":"Red Sea","settings":{"image":"shopify:\/\/shop_images\/red-sea-logo-png_seeklogo-328721.png","image_svg":"","link":""}},"logo_VftMkp":{"type":"logo","name":"Akua Design","settings":{"image":"shopify:\/\/shop_images\/logo_facebook_png.webp","image_svg":"","link":"shopify:\/\/products\/akua-cfs"}}},"block_order":["logo_Rn4h9P","logo_qiJzcH","logo_JKFdMf","logo_pkf3Jj","logo_n3VKzp","logo_g8DfdN","logo_43aFaN","logo_azMcB8","logo_e8AVtG","logo_GGEqd6","logo_cpRy37","logo_VftMkp"],"name":"t:sections.logo_list.presets.name","settings":{"number_of_items":5,"text_alignment":"center","title":"<h1>Marques disponibles chez AquaCorail<\/h1>","title_underline_style":"none","show_link":true,"link_text":"","link_url":"\/","button_style":"secondary link","spacing_desktop":35,"spacing_mobile":30,"fix_zindex":0}},"section_gallery_7wQyRg":{"type":"section-gallery","name":"t:sections.gallery.presets.name","settings":{"items_layout":"playful-grid","items_width":2,"height":"16\/9","enable_custom_height":false,"custom_height":300,"width":"boxed","space_between":8,"image_zoom":true,"image_move":false,"show_content_on_hover":false,"show_content_below":false,"content_on_hover_color_palette":"","layout_mobile":"compact","mobile_height":"1\/1","spacing_desktop":80,"spacing_mobile":30,"fix_zindex":0}},"section_gallery_EMz8RX":{"type":"section-gallery","name":"t:sections.gallery.presets.name","settings":{"items_layout":"static-grid","items_width":5,"height":"adapt","enable_custom_height":false,"custom_height":300,"width":"boxed","space_between":16,"image_zoom":true,"image_move":false,"show_content_on_hover":false,"show_content_below":false,"content_on_hover_color_palette":"","layout_mobile":"compact","mobile_height":"4\/5","spacing_desktop":100,"spacing_mobile":30,"fix_zindex":0}},"section_slideshow_CF7mBc":{"type":"section-slideshow","name":"t:sections.slideshow.presets.name","settings":{"height":"32\/9","width":"boxed","autoplay":false,"autoplay_seconds":3,"enable_controls":false,"height_mobile":"1\/1","spacing_desktop":80,"spacing_mobile":30,"fix_zindex":0}},"1662644676f2b34df9":{"type":"section-gallery","settings":{"items_layout":"playful-grid-inv","items_width":2,"height":"21\/9","enable_custom_height":false,"custom_height":300,"width":"wide","space_between":0,"image_zoom":true,"image_move":false,"show_content_on_hover":false,"show_content_below":false,"content_on_hover_color_palette":"","layout_mobile":"rows","mobile_height":"1\/1","spacing_desktop":0,"spacing_mobile":30,"fix_zindex":0}}},"order":["section_grid_yyCXme","1660291177d9f45101","section_featured_products_8GP3rz","section_collection_list_Nyfk3V","section_icon_text_blocks_6UaKpH","1662644641662a3424","section_promo_gallery_qWhfyK","section_testimonials_38mfcP","section_logo_list_MztgN3","section_gallery_7wQyRg","section_gallery_EMz8RX","section_slideshow_CF7mBc","1662644676f2b34df9"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "section_grid_yyCXme": {
+      "type": "section-grid",
+      "blocks": {
+        "image_UwVfdj": {
+          "type": "image",
+          "name": "Entreprise locale au coeur de la VDQ",
+          "settings": {
+            "overlay_opacity": 100,
+            "color_palette": "scheme-3",
+            "text_position": "text-start",
+            "cols": 2,
+            "rows": 1,
+            "title": "<h1>Entreprise locale au coeur de la <span style=\"text-decoration:underline\">Ville de Québec.</span></h1>",
+            "title_underline_style": "accent",
+            "text": "<p>Spécialiste en eau salée</p>",
+            "show_link": false,
+            "link_text": "Magasiner maintenant",
+            "link_url": "/",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": "",
+            "show_look": false,
+            "product_list": [],
+            "look_btn_style": "buy_button plain",
+            "look_position": "end",
+            "show_look_label": false,
+            "look_label_text": "Wholesale"
+          }
+        },
+        "image_wQVVFN": {
+          "type": "image",
+          "name": "Poissons",
+          "settings": {
+            "image": "shopify://shop_images/A5694FF6-E2E3-4A9D-AED6-7EC00F1839A2.jpg",
+            "overlay_opacity": 5,
+            "color_palette": "scheme-4",
+            "text_position": "align-bottom text-start",
+            "cols": 2,
+            "rows": 2,
+            "title": "",
+            "title_underline_style": "none",
+            "text": "<p><strong>Poissons</strong></p><h1>100+</h1>",
+            "show_link": false,
+            "link_text": "Button",
+            "link_url": "shopify://collections/poissons",
+            "button_style": "secondary plain",
+            "show_overlay_link": true,
+            "overlay_url": "shopify://collections/poissons",
+            "show_look": false,
+            "product_list": [],
+            "look_btn_style": "buy_button plain",
+            "look_position": "end",
+            "show_look_label": true,
+            "look_label_text": "Livraison locale disponible!"
+          }
+        },
+        "image_zrQRwD": {
+          "type": "image",
+          "name": "Coraux",
+          "settings": {
+            "image": "shopify://shop_images/7E670223-F552-4262-95BA-DD42194B60A0.jpg",
+            "overlay_opacity": 25,
+            "color_palette": "scheme-4",
+            "text_position": "align-bottom text-start",
+            "cols": 1,
+            "rows": 1,
+            "title": "",
+            "title_underline_style": "gradient",
+            "text": "<p><strong>Coraux</strong></p><h1>50+</h1>",
+            "show_link": false,
+            "link_text": "Coraux",
+            "link_url": "shopify://collections/coraux",
+            "button_style": "secondary plain",
+            "show_overlay_link": true,
+            "overlay_url": "shopify://collections/coraux",
+            "show_look": false,
+            "product_list": [],
+            "look_btn_style": "buy_button plain",
+            "look_position": "end",
+            "show_look_label": false,
+            "look_label_text": "Label"
+          }
+        },
+        "image_8bcpJL": {
+          "type": "image",
+          "name": "Invetébrés",
+          "settings": {
+            "image": "shopify://shop_images/090ec656-acdd-4aa2-a280-4f2d40dceae7.jpg",
+            "overlay_opacity": 20,
+            "color_palette": "scheme-4",
+            "text_position": "align-bottom text-start",
+            "cols": 1,
+            "rows": 1,
+            "title": "",
+            "title_underline_style": "none",
+            "text": "<p><strong>Invertébrés</strong></p><h1>60+</h1>",
+            "show_link": false,
+            "link_text": "Button",
+            "link_url": "shopify://collections/poissons",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": "shopify://collections/invertebres",
+            "show_look": false,
+            "product_list": [],
+            "look_btn_style": "buy_button plain",
+            "look_position": "end",
+            "show_look_label": false,
+            "look_label_text": "Label"
+          }
+        }
+      },
+      "block_order": [
+        "image_UwVfdj",
+        "image_wQVVFN",
+        "image_zrQRwD",
+        "image_8bcpJL"
+      ],
+      "settings": {
+        "number_of_columns": "4",
+        "height": "size-m",
+        "width": "boxed",
+        "space_between": 8,
+        "image_zoom": true,
+        "image_move": false,
+        "layout_mobile": "rows",
+        "mobile_height": "size-xs",
+        "spacing_desktop": 60,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "1660291177d9f45101": {
+      "type": "section-collection-list",
+      "name": "Explorer notre inventaire",
+      "settings": {
+        "collections": [
+          "clownfish",
+          "wysiwyg",
+          "anemone",
+          "angelfish-1",
+          "crevettes",
+          "dottyback",
+          "dragonets",
+          "damselfish",
+          "crabe",
+          "cuirs",
+          "blenny",
+          "basslet",
+          "betta",
+          "foxface-rabbitfish",
+          "goby",
+          "goniastrea",
+          "goniopora",
+          "hawkfish",
+          "invertebres",
+          "macroalgue",
+          "montipora",
+          "mou",
+          "lobophyllia",
+          "lps",
+          "oursin",
+          "poisson-chat",
+          "poissons",
+          "rasbora",
+          "rhodactis"
+        ],
+        "image_ratio": "square",
+        "fill_images": true,
+        "layout": "slider",
+        "number_of_items": 6,
+        "text_alignment": "start",
+        "title": "<h3>Explorer notre inventaire</h3><h4>Vivant</h4>",
+        "title_underline_style": "none",
+        "show_link": true,
+        "link_text": "View all",
+        "link_url": "",
+        "button_style": "secondary link",
+        "collection_title_size": "h5",
+        "mobile_layout": "slider",
+        "spacing_desktop": 60,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_featured_products_8GP3rz": {
+      "type": "section-featured-products",
+      "name": "Nourriture",
+      "settings": {
+        "products": [
+          "polyp-lab-nourriture-pour-coraux-reef-roids-haute-efficacite",
+          "plankton-1000ml",
+          "bta-anemone-diet",
+          "naturox-granules-coulants-pour-poissons-marins-1-1-5mm",
+          "cyclopod-cube-1-75oz",
+          "fancy-guppy-0-77-oz",
+          "crab-cuisine-1-76-oz",
+          "hikari-bio-pure-frozen-spirulina-mysis-shrimp-cubes-3-5-oz",
+          "nourriture-hikari-marine-s-50g",
+          "coral-cookies",
+          "hot-sauce",
+          "mini-munch"
+        ],
+        "layout": "slider",
+        "number_of_items": 5,
+        "text_alignment": "start",
+        "title": "<h4>Nourriture</h4>",
+        "title_underline_style": "none",
+        "text": "",
+        "show_link": false,
+        "link_text": "Button",
+        "link_url": "/",
+        "button_style": "primary plain",
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_color_picker": false,
+        "enable_quick_buy_compact": false,
+        "mobile_layout": "slider",
+        "spacing_desktop": 65,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_collection_list_Nyfk3V": {
+      "type": "section-collection-list",
+      "name": "Matériel",
+      "settings": {
+        "collections": [
+          "roche-sable-et-sel",
+          "kit-de-depart",
+          "colle-epoxy",
+          "entretien-medicaments",
+          "ro-di",
+          "additifs",
+          "chauffage-refroidissement"
+        ],
+        "image_ratio": "square",
+        "fill_images": true,
+        "layout": "slider",
+        "number_of_items": 6,
+        "text_alignment": "start",
+        "title": "<h4>Matériel</h4>",
+        "title_underline_style": "none",
+        "show_link": true,
+        "link_text": "View all",
+        "link_url": "",
+        "button_style": "secondary link",
+        "collection_title_size": "h5",
+        "mobile_layout": "slider",
+        "spacing_desktop": 60,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_icon_text_blocks_6UaKpH": {
+      "type": "section-icon-text-blocks",
+      "blocks": {
+        "text_kMgh7N": {
+          "type": "text",
+          "name": "Slogan",
+          "settings": {
+            "icon": "none",
+            "image_svg": "",
+            "image_height": 90,
+            "title": "",
+            "text": "<h2>Nous aidons les aquariophiles de Québec et des environs à réussir leur aquarium, avec un service local et des produits de qualité.</h2><h2></h2><h2></h2><h2></h2><h2></h2><h2></h2><h2></h2><h2></h2><h2>Découvrez les avantages de notre programme de récompenses!</h2>",
+            "link_color": "inherit",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain"
+          }
+        }
+      },
+      "block_order": [
+        "text_kMgh7N"
+      ],
+      "name": "t:sections.icon_text_blocks.presets.name",
+      "settings": {
+        "items_width": 4,
+        "text_alignment": "start",
+        "title": "<h2></h2><h2></h2>",
+        "title_underline_style": "none",
+        "text": "",
+        "font_size": "16px",
+        "show_link": true,
+        "link_text": "Button",
+        "link_url": "",
+        "button_style": "primary plain",
+        "blocks_text_alignment": "start",
+        "blocks_title_font": "primary",
+        "blocks_title_size": "h2",
+        "layout_mobile": "slider",
+        "mobile_blocks_text_alignment": "center",
+        "spacing_desktop": 80,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "1662644641662a3424": {
+      "type": "section-promo-gallery",
+      "blocks": {
+        "1662644641f8605a6c-0": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-3",
+            "overlay_opacity": 100,
+            "text_position": "align-middle",
+            "title": "PICO",
+            "title_underline_style": "accent",
+            "text": "<p><strong>Commencez à accumuler des avantages</strong></p><p>- Gagnez <strong>1 point par dollar dépensé</strong></p><p>- Recevez <strong>un invertébré gratuit</strong> avec tout achat de <strong>200 $ et plus</strong></p><p>Une façon simple et abordable d’économiser tout en améliorant votre aquarium</p>",
+            "show_link": false,
+            "link_text": "S'inscrire maintenant!",
+            "link_url": "/account",
+            "button_style": "primary link",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "1662644641f8605a6c-1": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity_img": 100,
+            "color_palette": "scheme-3",
+            "overlay_opacity": 100,
+            "text_position": "align-middle",
+            "title": "<strong>NANO </strong>",
+            "title_underline_style": "accent",
+            "text": "<p><strong>Des récompenses qui évoluent avec vous! </strong></p><p>- Accumulez <strong>1,5 point par dollar dépensé</strong></p><p>- Recevez <strong>un frag gratuit</strong> avec tout achat de <strong>300 $ et plus</strong></p><p>- Profitez d’avantages exclusifs : <strong>1,5× les points en tout temps</strong></p><p><strong>- Points doublés les mercredis</strong></p><p>Idéal pour faire grandir votre aquarium sans vous ruiner</p>",
+            "show_link": false,
+            "link_text": "Shop the catalogue",
+            "link_url": "/",
+            "button_style": "primary link",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_JdPUTT": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity_img": 100,
+            "color_palette": "scheme-3",
+            "overlay_opacity": 100,
+            "text_position": "align-middle",
+            "title": "MAX",
+            "title_underline_style": "accent",
+            "text": "<p><strong>Des récompenses avantageuses pour aller plus loin</strong></p><p>- Obtenez <strong>2 points par dollar dépensé</strong></p><p><strong>- Livraison gratuite</strong> dans un rayon de <strong>20 km</strong></p><p><strong>- Accès privilégié</strong> aux promotions</p><p>- Recevez une carte donnant <strong>4 paquets Atoll gratuits</strong></p><p><strong>- 10 % de rabais</strong> sur tous vos achats (non cumulable)</p><p>Le meilleur moyen d’économiser tout en profitant pleinement du service AquaCorail</p>",
+            "show_link": false,
+            "link_text": "Ask our experts",
+            "link_url": "/",
+            "button_style": "primary link",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_4cPgTL": {
+          "type": "image",
+          "name": "Avantages militaires",
+          "settings": {
+            "overlay_opacity_img": 100,
+            "color_palette": "scheme-3",
+            "overlay_opacity": 100,
+            "text_position": "align-middle",
+            "title": "PRO",
+            "title_underline_style": "none",
+            "text": "<p>Plus d'avantages, plus d'économies</p><p><strong>- 2,5 points par dollar dépensé</strong></p><p><strong>- Accumulez 2,5× les points en tout temps</strong></p><p><strong>- Priorité sur les nouveaux arrivages</strong></p><p><strong>- 15 % de rabais</strong> sur tous vos achats <em>(non cumulable)</em></p><p><strong>- 1 corail gratuit</strong> de notre choix dès l'obtention de la carte</p>",
+            "show_link": true,
+            "link_text": "",
+            "link_url": "/",
+            "button_style": "primary link",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "1662644641f8605a6c-0",
+        "1662644641f8605a6c-1",
+        "image_JdPUTT",
+        "image_4cPgTL"
+      ],
+      "name": "Système de points",
+      "settings": {
+        "items_width": 4,
+        "width": "boxed",
+        "height": "adapt",
+        "space_between": 20,
+        "image_zoom": true,
+        "shadow": false,
+        "title_size_blocks": "h4",
+        "layout_mobile": "compact",
+        "height_mobile": "16/9",
+        "spacing_desktop": 70,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_promo_gallery_qWhfyK": {
+      "type": "section-promo-gallery",
+      "blocks": {
+        "image_3Nzp6n": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity_img": 0,
+            "color_palette": "",
+            "overlay_opacity": 100,
+            "text_position": "text-center align-middle",
+            "title": "Parrainez un ami !",
+            "title_underline_style": "none",
+            "text": "<p>Offrez-lui <strong>5 $ de rabais</strong>… <br/>et recevez <strong>10$ </strong>lorsqu’il fait un achat.<br/>Aucun minimum. Aucun délai. Juste des économies.</p>",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_DQiKTd": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity_img": 0,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-center align-middle",
+            "title": "<a href=\"https://www.facebook.com/share/p/1LDSvsjWUV/\" title=\"https://www.facebook.com/share/p/1LDSvsjWUV/\"><span style=\"text-decoration:underline\">Avantage militaire et vétéran</span></a>",
+            "title_underline_style": "accent",
+            "text": "<p>Toujours<strong>10 % de rabais </strong>en magasin pour les <strong>militaires et vétérans</strong>, sur présentation d’une <strong>carte ou preuve militaire</strong>.</p><p><br/>Rabais <strong>permanent</strong>, non cumulable, non applicable sur les commandes spéciales ou réservations. Offre disponible en boutique seulement. </p>",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_XiBHKh": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity_img": 0,
+            "color_palette": "",
+            "overlay_opacity": 100,
+            "text_position": "text-center align-middle",
+            "title": "Toujours là pour vous aider!",
+            "title_underline_style": "none",
+            "text": "<p><strong>Venez nous poser vos questions sur </strong><a href=\"https://www.facebook.com/profile.php?id=100067091613307\" title=\"https://www.facebook.com/profile.php?id=100067091613307\"><strong>Facebook</strong></a><strong> ou consultez notre </strong><a href=\"/blogs/acclimatation-de-poissons\" title=\"Acclimatation de poissons\"><strong>blogue</strong></a><strong> !</strong></p>",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_3Nzp6n",
+        "image_DQiKTd",
+        "image_XiBHKh"
+      ],
+      "name": "t:sections.promo_gallery.presets.name",
+      "settings": {
+        "items_width": 3,
+        "width": "boxed",
+        "height": "16/9",
+        "space_between": 16,
+        "image_zoom": true,
+        "shadow": false,
+        "title_size_blocks": "h2",
+        "layout_mobile": "rows",
+        "height_mobile": "16/9",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_testimonials_38mfcP": {
+      "type": "section-testimonials",
+      "blocks": {
+        "testimonial_RChWMi": {
+          "type": "testimonial",
+          "settings": {
+            "text": "<p>Service incroyable et personnalisé ! Excellents conseils qui vous permettront soit de bien débuter soit de passer à un autre niveau! Belle variété de produits mais surtout se sont des gens exceptionnels! Je recommande AquaCorail!</p>",
+            "score": 5,
+            "author": "Mélanie",
+            "place": ""
+          }
+        },
+        "testimonial_DeNweX": {
+          "type": "testimonial",
+          "settings": {
+            "text": "<p>Exceptionnel service et compétences ! Grand grand merci et bravo ! 100% de survie de mes coraux, poissons et invertébrés collectés jusqu’à maintenant. Commandes souples et possibilité d’obtenir des espèces peu communes. Super conseils d’alimentation et de gestion d’aquarium !</p>",
+            "score": 5,
+            "author": "Joachim",
+            "place": ""
+          }
+        },
+        "testimonial_izn3WW": {
+          "type": "testimonial",
+          "settings": {
+            "text": "<p>Très bon service, magnifique poisson en parfaite santé, très belle variété ! Les aquariums sont très propre, Et que dire des propriétaires, des gens très dévouée et à l’écoute!  Je recommande à tout les passionnés !</p>",
+            "score": 5,
+            "author": "Jessica",
+            "place": ""
+          }
+        },
+        "testimonial_NNrRRt": {
+          "type": "testimonial",
+          "settings": {
+            "text": "<p>Très bon service, super qualité de poissons et de coraux, je les recommande.<br/>Très sympathiques et répondent à nos questions, et font un suivi. Vraiment bon service.</p>",
+            "score": 5,
+            "author": "Danielle",
+            "place": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_RChWMi",
+        "testimonial_DeNweX",
+        "testimonial_izn3WW",
+        "testimonial_NNrRRt"
+      ],
+      "name": "t:sections.testimonials.presets.name",
+      "settings": {
+        "color_palette": "",
+        "layout": "rows",
+        "items_width": 3,
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "text_alignment": "start",
+        "title": "<h2>Avis</h2>",
+        "title_underline_style": "none",
+        "text": "",
+        "show_link": true,
+        "link_text": "Button",
+        "link_url": "",
+        "button_style": "primary plain",
+        "testimonials_boxed_overlay_opacity": 10,
+        "color_palette_stars": "secondary",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_logo_list_MztgN3": {
+      "type": "section-logo-list",
+      "blocks": {
+        "logo_Rn4h9P": {
+          "type": "logo",
+          "name": "Two Little Fishies",
+          "settings": {
+            "image": "shopify://shop_images/two-little-fishies-logo.webp",
+            "image_svg": "",
+            "link": ""
+          }
+        },
+        "logo_qiJzcH": {
+          "type": "logo",
+          "name": "Polyp Lab",
+          "settings": {
+            "image": "shopify://shop_images/polyplab.jpg",
+            "image_svg": "",
+            "link": ""
+          }
+        },
+        "logo_JKFdMf": {
+          "type": "logo",
+          "name": "CaribSea",
+          "settings": {
+            "image": "shopify://shop_images/CaribSea-Logo-2020-large.png",
+            "image_svg": "",
+            "link": ""
+          }
+        },
+        "logo_pkf3Jj": {
+          "type": "logo",
+          "name": "API",
+          "settings": {
+            "image": "shopify://shop_images/images-2.png",
+            "image_svg": "",
+            "link": ""
+          }
+        },
+        "logo_n3VKzp": {
+          "type": "logo",
+          "name": "Reef Casa",
+          "settings": {
+            "image": "shopify://shop_images/Reef-Casa-Logo-2023-scaled-1-1-1.webp",
+            "image_svg": "",
+            "link": ""
+          }
+        },
+        "logo_g8DfdN": {
+          "type": "logo",
+          "name": "Atoll",
+          "settings": {
+            "image": "shopify://shop_images/image_ed8bb8be-a010-4061-a8ad-d8f8052de8fb_1200x1200_png.webp",
+            "image_svg": "",
+            "link": ""
+          }
+        },
+        "logo_43aFaN": {
+          "type": "logo",
+          "name": "Salifet",
+          "settings": {
+            "image": "shopify://shop_images/13-large_default.webp",
+            "image_svg": "",
+            "link": ""
+          }
+        },
+        "logo_azMcB8": {
+          "type": "logo",
+          "name": "Hanna Instruments",
+          "settings": {
+            "image": "shopify://shop_images/image-1200-ae44844223bd6b96a2fb572a80711c37.png",
+            "image_svg": "",
+            "link": "shopify://collections/hanna"
+          }
+        },
+        "logo_e8AVtG": {
+          "type": "logo",
+          "name": "Eheim",
+          "settings": {
+            "image": "shopify://shop_images/images.png",
+            "image_svg": "",
+            "link": ""
+          }
+        },
+        "logo_GGEqd6": {
+          "type": "logo",
+          "name": "Seapora",
+          "settings": {
+            "image": "shopify://shop_images/Seapora-logo.jpg",
+            "image_svg": "",
+            "link": ""
+          }
+        },
+        "logo_cpRy37": {
+          "type": "logo",
+          "name": "Red Sea",
+          "settings": {
+            "image": "shopify://shop_images/red-sea-logo-png_seeklogo-328721.png",
+            "image_svg": "",
+            "link": ""
+          }
+        },
+        "logo_VftMkp": {
+          "type": "logo",
+          "name": "Akua Design",
+          "settings": {
+            "image": "shopify://shop_images/logo_facebook_png.webp",
+            "image_svg": "",
+            "link": "shopify://products/akua-cfs"
+          }
+        }
+      },
+      "block_order": [
+        "logo_Rn4h9P",
+        "logo_qiJzcH",
+        "logo_JKFdMf",
+        "logo_pkf3Jj",
+        "logo_n3VKzp",
+        "logo_g8DfdN",
+        "logo_43aFaN",
+        "logo_azMcB8",
+        "logo_e8AVtG",
+        "logo_GGEqd6",
+        "logo_cpRy37",
+        "logo_VftMkp"
+      ],
+      "name": "t:sections.logo_list.presets.name",
+      "settings": {
+        "number_of_items": 5,
+        "text_alignment": "center",
+        "title": "<h1>Marques disponibles chez AquaCorail</h1>",
+        "title_underline_style": "none",
+        "show_link": true,
+        "link_text": "",
+        "link_url": "/",
+        "button_style": "secondary link",
+        "spacing_desktop": 35,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_gallery_7wQyRg": {
+      "type": "section-gallery",
+      "name": "t:sections.gallery.presets.name",
+      "settings": {
+        "items_layout": "playful-grid",
+        "items_width": 2,
+        "height": "16/9",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "width": "boxed",
+        "space_between": 8,
+        "image_zoom": true,
+        "image_move": false,
+        "show_content_on_hover": false,
+        "show_content_below": false,
+        "content_on_hover_color_palette": "",
+        "layout_mobile": "compact",
+        "mobile_height": "1/1",
+        "spacing_desktop": 80,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_gallery_EMz8RX": {
+      "type": "section-gallery",
+      "name": "t:sections.gallery.presets.name",
+      "settings": {
+        "items_layout": "static-grid",
+        "items_width": 5,
+        "height": "adapt",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "width": "boxed",
+        "space_between": 16,
+        "image_zoom": true,
+        "image_move": false,
+        "show_content_on_hover": false,
+        "show_content_below": false,
+        "content_on_hover_color_palette": "",
+        "layout_mobile": "compact",
+        "mobile_height": "4/5",
+        "spacing_desktop": 100,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_slideshow_CF7mBc": {
+      "type": "section-slideshow",
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "height": "32/9",
+        "width": "boxed",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "1/1",
+        "spacing_desktop": 80,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "1662644676f2b34df9": {
+      "type": "section-gallery",
+      "settings": {
+        "items_layout": "playful-grid-inv",
+        "items_width": 2,
+        "height": "21/9",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "width": "wide",
+        "space_between": 0,
+        "image_zoom": true,
+        "image_move": false,
+        "show_content_on_hover": false,
+        "show_content_below": false,
+        "content_on_hover_color_palette": "",
+        "layout_mobile": "rows",
+        "mobile_height": "1/1",
+        "spacing_desktop": 0,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    }
+  },
+  "order": [
+    "section_grid_yyCXme",
+    "1660291177d9f45101",
+    "section_featured_products_8GP3rz",
+    "section_collection_list_Nyfk3V",
+    "section_icon_text_blocks_6UaKpH",
+    "1662644641662a3424",
+    "section_promo_gallery_qWhfyK",
+    "section_testimonials_38mfcP",
+    "section_logo_list_MztgN3",
+    "section_gallery_7wQyRg",
+    "section_gallery_EMz8RX",
+    "section_slideshow_CF7mBc",
+    "1662644676f2b34df9"
+  ]
+}
