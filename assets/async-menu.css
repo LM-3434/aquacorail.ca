@@ -584,7 +584,7 @@
 .header__menu-item,
 nav a {
   max-width: none !important;
-  white-space: normal !important;
+  white-space: nowrap !important;
   overflow: visible !important;
   text-overflow: unset !important;
 }
