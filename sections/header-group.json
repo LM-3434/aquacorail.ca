@@ -111,7 +111,7 @@
         "menu_subs_font": "secondary",
         "menu_subs_font_weight": "400",
         "enable_menu_subs_font_size": true,
-        "menu_subs_font_size": 14,
+        "menu_subs_font_size": 20,
         "custom_menu_items_per_columns": false,
         "menu_items_limit": 5,
         "submenu_items_limit": 5,
