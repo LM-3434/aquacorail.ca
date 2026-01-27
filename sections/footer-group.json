@@ -1,1 +1,64 @@
-{"type":"footer","name":"t:static_sections.footer.name","sections":{"footer":{"type":"footer","blocks":{"footer-block-customer-support-1":{"type":"customer_support","settings":{"title":"<strong>AquaCorail<\/strong>","title_underline_style":"none","customer_support_img_width":220,"customer_support_offset_right":30,"customer_support_offset_bottom":0,"extra_customer_support":"<p><strong>Téléphone :<\/strong> +1 (418) 609-3396<br\/><strong>Email:<\/strong> AquaCorailEM@gmail.com<br\/>Heurs d'ouverture : <\/p><p>Lundi – Vendredi: 16:00 – 21:00<br\/>Samedi – Dimanche : 10:30 – 21:00<\/p>","show_phone_link":false,"show_mail_link":false,"show_whatsapp_link":false,"customer_support_offset_right_mobile":0,"customer_support_offset_bottom_mobile":0}},"footer-block-menu-1":{"type":"menu","settings":{"menu":"footer","split_menu":true}}},"block_order":["footer-block-customer-support-1","footer-block-menu-1"],"settings":{"footer_color":"scheme-1","title_font":"primary","title_size_blocks":"h5","bottom_color":"scheme-1","bottom_img_width":70,"bottom_img_link":"","enable_country_selector":true,"enable_language_selector":true,"enable_follow_on_shop":false,"show_payment_methods":true,"spacing_desktop":0,"spacing_mobile":0}}},"order":["footer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "t:static_sections.footer.name",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-block-customer-support-1": {
+          "type": "customer_support",
+          "settings": {
+            "title": "<strong>AquaCorail</strong>",
+            "title_underline_style": "none",
+            "customer_support_img_width": 220,
+            "customer_support_offset_right": 30,
+            "customer_support_offset_bottom": 0,
+            "extra_customer_support": "<p><strong>Téléphone :</strong> +1 (418) 609-3396</p><p><strong>Email:</strong> AquaCorailEM@gmail.com</p><p>Heurs d'ouverture : <br/>Lundi : 17:00 - 21:00<br/>Mardi : Fermé<br/>Mercredi : 17:00 - 21:00<br/>Jeudi : 17:00 - 21:00<br/>Vendredi : 17:00 - 21:00<br/>Samedi – Dimanche : 12:00 – 21:00</p>",
+            "show_phone_link": false,
+            "show_mail_link": false,
+            "show_whatsapp_link": false,
+            "customer_support_offset_right_mobile": 0,
+            "customer_support_offset_bottom_mobile": 0
+          }
+        },
+        "footer-block-menu-1": {
+          "type": "menu",
+          "settings": {
+            "menu": "footer",
+            "split_menu": true
+          }
+        }
+      },
+      "block_order": [
+        "footer-block-customer-support-1",
+        "footer-block-menu-1"
+      ],
+      "settings": {
+        "footer_color": "scheme-1",
+        "title_font": "primary",
+        "title_size_blocks": "h5",
+        "bottom_color": "scheme-1",
+        "bottom_img_width": 70,
+        "bottom_img_link": "",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "enable_follow_on_shop": false,
+        "show_payment_methods": true,
+        "spacing_desktop": 0,
+        "spacing_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}
