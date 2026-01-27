@@ -578,13 +578,4 @@
 	#root #nav > ul.nav-user > li.link-btn.mobile-hide { display: flex; flex-wrap: wrap; }
 
 	#root .shopify-section-header #nav > ul > li.sub > a span.mobile-hide { position: relative; left: 0; top: 0; }
-}/* FIX titres de menu tronqués (…)
-   après désactivation de Meteor Mega Menu */
-.list-menu__item,
-.header__menu-item,
-nav a {
-  max-width: none !important;
-  white-space: nowrap !important;
-  overflow: visible !important;
-  text-overflow: unset !important;
 }
