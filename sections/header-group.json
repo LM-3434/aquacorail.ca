@@ -106,7 +106,7 @@
         "menu_font": "secondary",
         "menu_font_weight": "600",
         "menu_font_size": 14,
-        "menu_letter_spacing": 0,
+        "menu_letter_spacing": -4,
         "menubar_caps": true,
         "menu_subs_font": "secondary",
         "menu_subs_font_weight": "400",
