@@ -508,6 +508,15 @@
             "place": ""
           }
         },
+        "testimonial_ggth7D": {
+          "type": "testimonial",
+          "settings": {
+            "text": "<p>AquaCorail est une perle dans le domaine de l'aquariophilie à Québec. Les propriétaires donnent d'excellents conseils pour tous les niveaux, budgets et besoins.<br/><br/>Je n'aurais pas pu demander mieux que leurs soutien pour débuter mon aventure dans l'eau salée! On a toujours des discussions intéressantes qui me donnent des idées pour des projets futurs. Si j'hésite sur un produit, jamais on me fait de pression pour l'acheter. J'apprécie beaucoup leur expertise et façon de faire.</p>",
+            "score": 5,
+            "author": "Lauriane",
+            "place": ""
+          }
+        },
         "testimonial_izn3WW": {
           "type": "testimonial",
           "settings": {
@@ -530,14 +539,15 @@
       "block_order": [
         "testimonial_RChWMi",
         "testimonial_DeNweX",
+        "testimonial_ggth7D",
         "testimonial_izn3WW",
         "testimonial_NNrRRt"
       ],
       "name": "t:sections.testimonials.presets.name",
       "settings": {
         "color_palette": "",
-        "layout": "rows",
-        "items_width": 3,
+        "layout": "slider",
+        "items_width": 2,
         "autoplay": false,
         "autoplay_seconds": 3,
         "text_alignment": "start",
