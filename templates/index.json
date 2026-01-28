@@ -508,21 +508,21 @@
             "place": ""
           }
         },
+        "testimonial_izn3WW": {
+          "type": "testimonial",
+          "settings": {
+            "text": "<p>Très bon service, magnifique poisson en parfaite santé, très belle variété ! Les aquariums sont très propre, Et que dire des propriétaires, des gens très dévouée et à l’écoute!  Je recommande à tout les passionnés!</p>",
+            "score": 5,
+            "author": "Jessica",
+            "place": ""
+          }
+        },
         "testimonial_ggth7D": {
           "type": "testimonial",
           "settings": {
             "text": "<p>AquaCorail est une perle dans le domaine de l'aquariophilie à Québec. Les propriétaires donnent d'excellents conseils pour tous les niveaux, budgets et besoins.<br/><br/>Je n'aurais pas pu demander mieux que leurs soutien pour débuter mon aventure dans l'eau salée! On a toujours des discussions intéressantes qui me donnent des idées pour des projets futurs. Si j'hésite sur un produit, jamais on me fait de pression pour l'acheter. J'apprécie beaucoup leur expertise et façon de faire.</p>",
             "score": 5,
             "author": "Lauriane",
-            "place": ""
-          }
-        },
-        "testimonial_izn3WW": {
-          "type": "testimonial",
-          "settings": {
-            "text": "<p>Très bon service, magnifique poisson en parfaite santé, très belle variété ! Les aquariums sont très propre, Et que dire des propriétaires, des gens très dévouée et à l’écoute!  Je recommande à tout les passionnés !</p>",
-            "score": 5,
-            "author": "Jessica",
             "place": ""
           }
         },
@@ -539,15 +539,15 @@
       "block_order": [
         "testimonial_RChWMi",
         "testimonial_DeNweX",
-        "testimonial_ggth7D",
         "testimonial_izn3WW",
+        "testimonial_ggth7D",
         "testimonial_NNrRRt"
       ],
       "name": "t:sections.testimonials.presets.name",
       "settings": {
         "color_palette": "",
         "layout": "slider",
-        "items_width": 2,
+        "items_width": 3,
         "autoplay": false,
         "autoplay_seconds": 3,
         "text_alignment": "start",
